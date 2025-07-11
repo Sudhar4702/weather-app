@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Game of Thrones', serif;
+}
+@font-face {
+  font-family: 'Game of Thrones';
+  src: url('fonts/Game of Thrones.ttf') format('truetype');
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+body{
+    background-image: url("images/assassin.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.weather > div{
+    margin: 0.625rem;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.region{
+    display: inline;
+    font-size: 80%;
+}
+.country{
+    display: inline;
+    margin:3px;
+    font-size: 60%;
+}
+.celsius{
+    font-size: 2rem;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+.fahrenheit{
+    font-size: 2rem ;
+
+}
+.weather_condition img{
+    width: 50px;
+    height: 50px;
+}
+.weather_condition span{
+    font-size: 16px;
+}
+.weather_condition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin: 2rem;
+}
+.cont_cel{
+    display: flex;
+    width: 20%;
+    
+}
+.cont_far{
+    display: flex;
+    width: 30%;
+    padding-top: 15px;
+}
+.degree_symbol{
+    margin-left: 20%;
+    margin-right: 1.5rem;
+    padding: 0%;
+    display: flex;
+    font-size: 15px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0%;
+}
+nav form{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    width: 70%;
+}
+.search_feild{
+    font-size: 1.1rem;
+    width:98%;
+    padding: 1rem 5px;
+    outline: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+}
+nav form button{
+    font-size: 1.1rem;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color: rgb(0, 7, 12);
+    background-color: rgb(228, 241, 241);
+    border-radius: 10px;
+}
