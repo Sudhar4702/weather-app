@@ -13,7 +13,7 @@ const search=document.querySelector(".search_feild");
 
 
 async function fetchData(target) {
-  const endPoint = `http://api.weatherapi.com/v1/current.json?key=26c3ed8aec5f46948a9175858250407&q=${target}`;
+  const endPoint = `https://api.weatherapi.com/v1/current.json?key=26c3ed8aec5f46948a9175858250407&q=${target}`;
   const response = await fetch(endPoint);
   const data = await response.json();
   const current_celsius=data.current.temp_c;
